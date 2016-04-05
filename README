@@ -1,0 +1,64 @@
+result:
+
+	size value=1000:
+		
+		sort(): 0 seconds
+		v1/v2 are different.
+		insertion_sort(): 0.01 seconds
+		v1/v2 are the same.
+
+	
+	size value=10000:
+
+		sort(): 0 seconds
+		v1/v2 are different.
+		insertion_sort(): 1.26 seconds
+		v1/v2 are the same.
+		
+
+	size value=100000:
+		
+		sort(): 0.04 seconds
+		v1/v2 are different.
+		insertion_sort(): 127.9 seconds
+		v1/v2 are the same.
+
+
+	size value=1000000:
+		
+		sort(): 0.51 seconds
+		v1/v2 are different.
+		insertion_sort(): *****
+		//i have no result here as the time running as extremely and unexpectedly long. i had executed more than 5 hours.
+		
+
+For the size value = 1000, 
+(n log n) = 1000 log 1000
+ = 1000*(3)
+=3000
+
+n^2=1000^2
+	=1000000
+1000000>3000
+
+For the size value = 10000, 
+(n log n) = 10000 log 10000
+ = 10000*(4)
+=40000
+
+n^2=10000^2
+	=100000000
+100000000>40000
+
+For the size value = 100000, 
+(n log n) = 100000 log 100000
+ = 100000*(5)
+=500000
+
+n^2=100000^2
+	=10000000000
+10000000000>500000
+
+As the result above, it proves that the time used of n log n is longer than that of n^2 and the difference between that is increasing sharply. It means that O(n^2) is faster than O(n log n) as the n is increasing.
+		
+		
